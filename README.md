@@ -27,8 +27,15 @@ I did a simple preprocessing to create a training data set. I took about 60 book
 So, the data set consists of 26 authors, each author contributes 2000 sentences. In a nootebook above I create an output file for [sent-conv-torch] (https://github.com/harvardnlp/sent-conv-torch). I had to fix some simple problems in their code, but overall the code was working out of the box. I also had to set up EC2 gpu instance to run the experiments since on my laptop the problem was intracable.
 
 ## Results
-I use default 10-fold cross validation which is provided as an optin in [sent-conv-torch] (https://github.com/harvardnlp/sent-conv-torch). 
-Model acheived global top-1 performance around 53%.
+I use default 10-fold cross validation which is provided as an option in [sent-conv-torch] (https://github.com/harvardnlp/sent-conv-torch).
+The best results I got by using non-static w2v embeddings. 
+ 
+Model | dev | test
+--- --- ---
+static |0.5359208847299    | 0.53507692307692  
+non static | 0.58781369629945  |0.58798076923077
+multy channel| N/A    | ~57%
+random | N/A  | ~53% 
 
 ## Thoughts on how to improve the model
  1) More data. More data is always better. It will help with overfitting that I currently observe.
