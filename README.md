@@ -42,4 +42,11 @@ random | N/A  | ~53%
  2) Better data. As I mentioned before I used very crude way to pick the sentences out and i think it can be greately improved.
  3) Instead of sentence level we could probably use 2 consecutive sentences or even a paragraph to get a wider sample of the author style.
     I see that for example short sentence might be enough to detect sentiment (this what this particular code was used for), however it migh not be enought to detect a style.
- 4) It might help to play around with network architecture for example to imcreasea filter length.       
+ 4) It might help to play around with network architecture for example to imcreasea filter length.      
+
+## References:
+
+	Kim, Y. (2014). Convolutional Neural Networks for Sentence Classification. In Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP), pp. 1746–1751, Doha, Qatar. Association for Computational Linguistics.
+https://github.com/harvardnlp/sent-conv-torch
+https://github.com/yoonkim/CNN_sentence
+ 
