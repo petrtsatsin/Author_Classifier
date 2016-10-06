@@ -31,7 +31,7 @@ I use default 10-fold cross validation which is provided as an option in [sent-c
 The best results I got by using non-static w2v embeddings. 
  
 Model | dev | test
---- --- ---
+---| ---| ---
 static |0.5359208847299    | 0.53507692307692  
 non static | 0.58781369629945  |0.58798076923077
 multy channel| N/A    | ~57%
